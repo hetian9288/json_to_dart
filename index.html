@@ -12,7 +12,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/github.css">
-
+    <style>
+    #editor {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+    }
+    </style>
 </head>
 
 <body class="bg-light">
@@ -21,8 +27,8 @@
             <div class="col-12 col-md-4">
                 <form onsubmit="return false;">
                     <div class="form-group">
-                        <label for="json">JSON</label>
-                        <textarea class="form-control" id="json" rows="20"></textarea>
+                        <div id="editor"></div>
+<!--                         <textarea class="form-control" id="json" rows="20"></textarea> -->
                     </div>
                     <button type="submit" class="btn btn-primary">Generate Dart</button>
                     <label><input type="checkbox" id="private-fields"> Use private fields</label>
@@ -56,7 +62,7 @@
     <script src="js/highlight.min.js"></script>
     <script src="js/page.js"></script>
     <script>
-    var editor = ace.edit("json");
+    var editor = ace.edit("editor");
         editor.setTheme("ace/theme/xcode");
         var JavaScriptMode = ace.require("ace/mode/json").Mode;
         editor.session.setMode(new JavaScriptMode());
