@@ -62,14 +62,19 @@
     <script src="https://hetian9288.github.io/ace/build/src/ace.js"></script>
     <script src="https://hetian9288.github.io/ace/build/src/theme-xcode.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://hetian9288.github.io/ace/build/src/mode-json.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/highlight.min.js"></script>
-    <script src="js/page.js"></script>
     <script>
     var editor = ace.edit("editor");
         editor.setTheme("ace/theme/xcode");
         var JavaScriptMode = ace.require("ace/mode/json").Mode;
         editor.session.setMode(new JavaScriptMode());
+        function __getCodeTxt(){
+            return editor.getValue();
+        }
+
     </script>
+    
+    <script src="js/highlight.min.js"></script>
+    <script src="js/page.js"></script>
 </body>
 
 </html>
