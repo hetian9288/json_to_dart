@@ -9,7 +9,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 }
 
 #json {
-/*     position: absolute; */
+    position: absolute;
     width: 500px;
     height: 400px;
 }
