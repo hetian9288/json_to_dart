@@ -32902,7 +32902,7 @@
         $event.stopPropagation();
         syntaxError = false;
         invalidDart = false;
-        json = this.textArea.value;
+        json = __getCodeTxt();
         try {
           C.JsonCodec_null_null.decode$1(0, json);
         } catch (exception) {
