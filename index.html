@@ -50,8 +50,17 @@
             </ul>
         </footer>
     </div>
+    <script src="https://hetian9288.github.io/ace/lib/ace/ace.js"></script>
+    <script src="https://hetian9288.github.io/ace/lib/ace/mode/json.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://hetian9288.github.io/ace/lib/ace/theme/xcode.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/highlight.min.js"></script>
     <script src="js/page.js"></script>
+    <script>
+    var editor = ace.edit("json");
+        editor.setTheme("ace/theme/xcode");
+        var JavaScriptMode = ace.require("ace/mode/json").Mode;
+        editor.session.setMode(new JavaScriptMode());
+    </script>
 </body>
 
 </html>
