@@ -8,6 +8,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   color: red;
 }
 
+#json {
+/*     position: absolute; */
+    width: 500px;
+    height: 400px;
+}
+
 .hljs {
   display: block;
   overflow-x: auto;
