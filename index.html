@@ -21,14 +21,14 @@
         height: 400px;
     }
         .form-group{
-            height: 480px;}
+            height: 400px;
+        }
     </style>
 </head>
 
 <body class="bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-5">
+        <div style="width: 100%; height: 100%;">
+            <div style="float:left; width: 500;">
                 <form onsubmit="return false;">
                     <div class="form-group">
                         <div id="editor"></div>
@@ -39,13 +39,15 @@
                     <button id="copy-clipboard" class="mt-2 btn btn-secondary" disabled>Copy Dart code to clipboard</button>
                 </form>
             </div>
-            <div class="col-12 col-md-7">
+            <div style="float:left;margin-left: 24px">
                 <div>
                 <b id="invalid-dart" style="display: none">The Dart code generated is invalid</b>
                 <pre><code class="dart"></code></pre>
                 <textarea style="position:fixed;opacity: 0;" id="hidden-dart"></textarea>
             </div>
         </div>
+            <div style="clear: both;margin-bottom: 32px;"></div>
+   <div class="container">
         <footer class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">Handcrafted by Javier Lecuona</p>
             <ul class="list-inline">
